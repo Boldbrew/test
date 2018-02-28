@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/maps/api/geocode/xml" method="GET" resourcePath="/maps/api/geocode/xml" id="de31e4f0-3317-4b6b-b17e-1e5deedd471b" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="de31e4f0-3317-4b6b-b17e-1e5deedd471bfileName">%2Fmaps%2Fapi%2Fgeocode%2Fxml</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response Ok</con:defaultResponse>
+  <con:dispatchStyle>SCRIPT</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath>if( mockRequest.httpRequest.toString().contains("Beijing") )
+        {
+        return "Response Beijing"
+        }
+        else if( mockRequest.httpRequest.toString().contains("Tokyo") )
+        {
+        return "Response Tokyo"
+        }
+        else if( mockRequest.httpRequest.toString().contains("Moscow") )
+        {
+        return "Response Moscow"
+        }
+        else if( mockRequest.httpRequest.toString().contains("Seoul") )
+        {
+        return "Response Seoul"
+        }
+        else if( mockRequest.httpRequest.toString().contains("Jakarta") )
+        {
+        return "Response Jakarta"
+        }
+        else
+        {
+        return "Response Ok"
+        }</con:dispatchPath>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response Ok" id="a990c945-95fd-4470-8745-a41b5efc8b78" httpResponseStatus="200" mediaType="application/xml" encoding="UTF-8" dataSource="">
+    <con:settings/>
+    <con:script/>
+    <con:responseContent/>
+  </con:response>
+  <con:response name="Response Beijing" id="27cfbddf-7e96-4052-810b-42e6b76fb45d" httpResponseStatus="200" mediaType="application/xml" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>locality</type>
+  <type>political</type>
+  <formatted_address>Beijing, Beijing, China</formatted_address>
+  <address_component>
+   <long_name>Beijing</long_name>
+   <short_name>Beijing</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Beijing</long_name>
+   <short_name>Beijing</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>China</long_name>
+   <short_name>CN</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>39.9042110</lat>
+    <lng>116.4073950</lng>
+   </location>
+   <location_type>APPROXIMATE</location_type>
+   <viewport>
+    <southwest>
+     <lat>39.6612714</lat>
+     <lng>116.0119343</lng>
+    </southwest>
+    <northeast>
+     <lat>40.2164962</lat>
+     <lng>116.7829835</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>39.4427581</lat>
+     <lng>115.4234115</lng>
+    </southwest>
+    <northeast>
+     <lat>41.0608158</lat>
+     <lng>117.5146251</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+ </result>
+</GeocodeResponse>]]></con:responseContent>
+  </con:response>
+  <con:response name="Response Tokyo" id="771c09bf-1e35-4859-8469-8edecb816209" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>administrative_area_level_1</type>
+  <type>political</type>
+  <formatted_address>Tokyo, Japan</formatted_address>
+  <address_component>
+   <long_name>Tokyo</long_name>
+   <short_name>Tokyo</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Japan</long_name>
+   <short_name>JP</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>35.6894875</lat>
+    <lng>139.6917064</lng>
+   </location>
+   <location_type>APPROXIMATE</location_type>
+   <viewport>
+    <southwest>
+     <lat>35.5288730</lat>
+     <lng>139.5105740</lng>
+    </southwest>
+    <northeast>
+     <lat>35.8178130</lat>
+     <lng>139.9102020</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>24.2242343</lat>
+     <lng>138.9427579</lng>
+    </southwest>
+    <northeast>
+     <lat>35.8986466</lat>
+     <lng>153.9875216</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+ </result>
+</GeocodeResponse>]]></con:responseContent>
+  </con:response>
+  <con:response name="Response Moscow" id="44bfaee4-bb08-4409-9867-39d12cefd53e" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>locality</type>
+  <type>political</type>
+  <formatted_address>Moscow, Russia</formatted_address>
+  <address_component>
+   <long_name>Moscow</long_name>
+   <short_name>Moscow</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>gorod Moskva</long_name>
+   <short_name>g. Moskva</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Moscow</long_name>
+   <short_name>Moscow</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Russia</long_name>
+   <short_name>RU</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>55.7558260</lat>
+    <lng>37.6173000</lng>
+   </location>
+   <location_type>APPROXIMATE</location_type>
+   <viewport>
+    <southwest>
+     <lat>55.4899270</lat>
+     <lng>37.3193288</lng>
+    </southwest>
+    <northeast>
+     <lat>56.0096570</lat>
+     <lng>37.9456611</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>55.4899270</lat>
+     <lng>37.3193288</lng>
+    </southwest>
+    <northeast>
+     <lat>56.0096570</lat>
+     <lng>37.9456611</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+ </result>
+ <result>
+  <type>locality</type>
+  <type>political</type>
+  <formatted_address>Moscow, ID, USA</formatted_address>
+  <address_component>
+   <long_name>Moscow</long_name>
+   <short_name>Moscow</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Latah County</long_name>
+   <short_name>Latah County</short_name>
+   <type>administrative_area_level_2</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Idaho</long_name>
+   <short_name>ID</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>United States</long_name>
+   <short_name>US</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>46.7323875</lat>
+    <lng>-117.0001651</lng>
+   </location>
+   <location_type>APPROXIMATE</location_type>
+   <viewport>
+    <southwest>
+     <lat>46.7109121</lat>
+     <lng>-117.0396979</lng>
+    </southwest>
+    <northeast>
+     <lat>46.7588820</lat>
+     <lng>-116.9620680</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>46.7109121</lat>
+     <lng>-117.0396979</lng>
+    </southwest>
+    <northeast>
+     <lat>46.7588820</lat>
+     <lng>-116.9620680</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+ </result>
+</GeocodeResponse>]]></con:responseContent>
+  </con:response>
+  <con:response name="Response Seoul" id="a84ce275-a180-486c-b820-82dc4ad248c5" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>locality</type>
+  <type>political</type>
+  <formatted_address>Seoul, South Korea</formatted_address>
+  <address_component>
+   <long_name>Seoul</long_name>
+   <short_name>Seoul</short_name>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>South Korea</long_name>
+   <short_name>KR</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>37.5665350</lat>
+    <lng>126.9779692</lng>
+   </location>
+   <location_type>APPROXIMATE</location_type>
+   <viewport>
+    <southwest>
+     <lat>37.4346000</lat>
+     <lng>126.7968000</lng>
+    </southwest>
+    <northeast>
+     <lat>37.6956000</lat>
+     <lng>127.1823000</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>37.4259627</lat>
+     <lng>126.7645827</lng>
+    </southwest>
+    <northeast>
+     <lat>37.7017495</lat>
+     <lng>127.1835900</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+ </result>
+</GeocodeResponse>]]></con:responseContent>
+  </con:response>
+  <con:response name="Response Jakarta" id="9d9cf99e-afdc-4d0d-9d6e-1f441bfb4f7a" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<GeocodeResponse>
+ <status>OK</status>
+ <result>
+  <type>colloquial_area</type>
+  <type>locality</type>
+  <type>political</type>
+  <formatted_address>Jakarta, Special Capital Region of Jakarta, Indonesia</formatted_address>
+  <address_component>
+   <long_name>Jakarta</long_name>
+   <short_name>Jakarta</short_name>
+   <type>colloquial_area</type>
+   <type>locality</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Special Capital Region of Jakarta</long_name>
+   <short_name>Special Capital Region of Jakarta</short_name>
+   <type>administrative_area_level_1</type>
+   <type>political</type>
+  </address_component>
+  <address_component>
+   <long_name>Indonesia</long_name>
+   <short_name>ID</short_name>
+   <type>country</type>
+   <type>political</type>
+  </address_component>
+  <geometry>
+   <location>
+    <lat>-6.2087634</lat>
+    <lng>106.8455990</lng>
+   </location>
+   <location_type>APPROXIMATE</location_type>
+   <viewport>
+    <southwest>
+     <lat>-6.3708331</lat>
+     <lng>106.6862110</lng>
+    </southwest>
+    <northeast>
+     <lat>-6.0886599</lat>
+     <lng>106.9728250</lng>
+    </northeast>
+   </viewport>
+   <bounds>
+    <southwest>
+     <lat>-6.3708331</lat>
+     <lng>106.6862110</lng>
+    </southwest>
+    <northeast>
+     <lat>-6.0886599</lat>
+     <lng>106.9728250</lng>
+    </northeast>
+   </bounds>
+  </geometry>
+ </result>
+</GeocodeResponse>]]></con:responseContent>
+  </con:response>
+</con:restMockAction>
