@@ -33,6 +33,10 @@
 </xml-fragment>]]></con:setting>
     <con:setting id="50260edc-b2e0-49c3-9e2a-76fbd9efa6adfileName">Baseline-Load-Sample-Project</con:setting>
   </con:settings>
+  <con:vcsConfiguration>
+    <con:vcsName>Git</con:vcsName>
+    <con:repositoryIdentifier>https://github.com/Boldbrew/test</con:repositoryIdentifier>
+  </con:vcsConfiguration>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
   <con:properties/>
