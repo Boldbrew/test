@@ -21,7 +21,7 @@
       <con1:property key="limits">Time=60;</con1:property>
     </con1:attributes>
     <con1:addons/>
-    <con1:scene label="DefaultLoadUITest" id="4b5d33f9-f1d9-4e4d-900b-8460937e67e7" version="46">
+    <con1:scene label="DefaultLoadUITest" id="4b5d33f9-f1d9-4e4d-900b-8460937e67e7" version="52">
       <con1:properties>
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
