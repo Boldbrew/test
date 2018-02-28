@@ -45,7 +45,6 @@
   <con:jmsConnectionContainer/>
   <con:oAuth2ProfileContainer/>
   <con:oAuth1ProfileContainer/>
-  <con:reporting/>
   <con:sensitiveInformation/>
   <con:authRepository/>
   <con:tags/>
