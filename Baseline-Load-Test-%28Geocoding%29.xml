@@ -84,9 +84,22 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
+      <con1:component type="com.eviware.loadui.impl.component.flowControls.LoopFlowComponent" label="Loop 1" id="dae4b692-5f64-4dcc-91b4-c89a7fa21a8f" category="Flow">
+        <con1:properties>
+          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+          <con1:property propagates="true" key="iterations" type="java.lang.Long">2</con1:property>
+          <con1:property propagates="true" key="displayedIterations" type="java.lang.Long">2</con1:property>
+        </con1:properties>
+        <con1:attributes>
+          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Loop</con1:property>
+        </con1:attributes>
+        <con1:addons/>
+      </con1:component>
       <con1:connection outputTerminalId="ecb6d926-7835-4167-a1df-34dfcd82db71/outgoingTerminal" inputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/stateTerminal"/>
-      <con1:connection outputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/triggerTerminal" inputTerminalId="b92b9922-ec4d-4464-ad87-1b1531052df3/triggerTerminal"/>
-      <con1:connection outputTerminalId="b92b9922-ec4d-4464-ad87-1b1531052df3/runningTerminal" inputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/Sample Count"/>
+      <con1:connection outputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/triggerTerminal" inputTerminalId="dae4b692-5f64-4dcc-91b4-c89a7fa21a8f/incomingTerminal"/>
+      <con1:connection outputTerminalId="dae4b692-5f64-4dcc-91b4-c89a7fa21a8f/loop" inputTerminalId="b92b9922-ec4d-4464-ad87-1b1531052df3/triggerTerminal"/>
+      <con1:connection outputTerminalId="b92b9922-ec4d-4464-ad87-1b1531052df3/runningTerminal" inputTerminalId="dae4b692-5f64-4dcc-91b4-c89a7fa21a8f/incomingTerminal"/>
+      <con1:connection outputTerminalId="dae4b692-5f64-4dcc-91b4-c89a7fa21a8f/exit" inputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/Sample Count"/>
     </con1:scene>
     <con1:statistics>
       <con1:page title="DefaultLoadUIStatisticPage">
