@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="13fd4c87-d2d0-4b4f-a7f4-629c290cd19afileName">Capital-cities</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="datasource" name="DataSource" id="08b01eeb-4d4d-4a8b-a0b6-9aba678111ef">
     <con:settings/>
     <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
