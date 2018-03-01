@@ -19,6 +19,7 @@
         </con:configuration>
       </con:dataSource>
       <con:property>cityName</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
       <con:restartOnRun>true</con:restartOnRun>
     </con:config>
   </con:testStep>
