@@ -21,7 +21,7 @@
       <con1:property key="limits">Time=60;</con1:property>
     </con1:attributes>
     <con1:addons/>
-    <con1:scene label="DefaultLoadUITest" id="4b5d33f9-f1d9-4e4d-900b-8460937e67e7" version="139">
+    <con1:scene label="DefaultLoadUITest" id="4b5d33f9-f1d9-4e4d-900b-8460937e67e7" version="142">
       <con1:properties>
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
@@ -84,9 +84,6 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:connection outputTerminalId="ecb6d926-7835-4167-a1df-34dfcd82db71/outgoingTerminal" inputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/stateTerminal"/>
-      <con1:connection outputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/triggerTerminal" inputTerminalId="e213f837-977c-497b-bc2b-529d581cfa2a/triggerTerminal"/>
-      <con1:connection outputTerminalId="e213f837-977c-497b-bc2b-529d581cfa2a/runningTerminal" inputTerminalId="f7518b1a-65c2-428e-b9fd-2f68e2616ff8/Sample Count"/>
     </con1:scene>
     <con1:statistics>
       <con1:page title="DefaultLoadUIStatisticPage">
